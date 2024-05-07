@@ -21,7 +21,7 @@ def tratarErro(funcao, mensagem):
     try:
         logging.info(f'INICIANDO FLUXO: "{mensagem}"')
         funcao(driver)
-        logging.info(f'FLUXO "{mensagem}" FINALIZADO COM SUCESSO')
+        logging.info(f'FLUXO "{mensagem}" FINALIZADO COM SUCESSO\n')
     except Exception as err:
         logging.critical(f'Erro ao "{mensagem}"')
 

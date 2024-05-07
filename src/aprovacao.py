@@ -46,7 +46,7 @@ def aprovarNotas(driver):
             filtro.send_keys(Keys.ENTER)
 
             tarefa = wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'prefetch')))
-            time.sleep(1)
+            time.sleep(2)
             tarefa.click()
 
             # mudando o contexto para o iframe do formulario
